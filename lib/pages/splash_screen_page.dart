@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mulk/main.dart';
+import 'package:mulk/pages/main_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   static const String id = 'splash';
@@ -42,7 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
           ),
           Text('Al-Mulk',style: GoogleFonts.rubik(color: Colors.black,fontSize: 35,fontWeight: FontWeight.w500),),
           const SizedBox(height: 240),
-          Text('Powered by FDev',style: GoogleFonts.rubik(color: Colors.green.shade900,fontSize: 18,fontWeight: FontWeight.w500),),
+          Text('Powered by Muslim',style: GoogleFonts.rubik(color: Colors.green.shade900,fontSize: 15,fontWeight: FontWeight.w500),),
         ],
       ),
     );
