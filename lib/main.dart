@@ -1,17 +1,11 @@
 //Rismillahir Rohmanir Rohim
 
-import 'package:assets_audio_player/assets_audio_player.dart';
-import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:mulk/pages/info_page.dart';
-import 'package:mulk/pages/splash_screen_page.dart';
-import 'package:mulk/translations/codegen_loader.g.dart';
-import '../translations/locale_keys.g.dart';
-import 'package:quran/quran.dart' as quran;
-
+import 'package:mulk/core/translations/codegen_loader.g.dart';
+import 'package:mulk/ui/pages/info_page.dart';
+import 'package:mulk/ui/pages/splash_screen_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -44,9 +38,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home:  SplashScreen(),
+      home: const SplashScreen(),
       routes: {
-        InfoPage.id: (context) => const InfoPage(mode: false,)},
+        InfoPage.id: (context) => const InfoPage(
+              mode: false,
+            )
+      },
     );
   }
 }
