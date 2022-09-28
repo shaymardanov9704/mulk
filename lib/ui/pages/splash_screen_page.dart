@@ -44,13 +44,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 color: Colors.black, fontSize: 35, fontWeight: FontWeight.w500),
           ),
           const SizedBox(height: 240),
-          Text(
-            'Powered by Muslim',
-            style: GoogleFonts.rubik(
-                color: Colors.green.shade900,
-                fontSize: 15,
-                fontWeight: FontWeight.w500),
-          ),
+
         ],
       ),
     );
