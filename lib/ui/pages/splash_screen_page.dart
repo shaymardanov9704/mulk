@@ -41,10 +41,12 @@ class _SplashScreenState extends State<SplashScreen> {
           Text(
             'Al-Mulk',
             style: GoogleFonts.rubik(
-                color: Colors.black, fontSize: 35, fontWeight: FontWeight.w500),
+              color: Colors.black,
+              fontSize: 35,
+              fontWeight: FontWeight.w500,
+            ),
           ),
           const SizedBox(height: 240),
-
         ],
       ),
     );

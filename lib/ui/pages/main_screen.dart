@@ -662,7 +662,7 @@ class _MainScreenState extends State<MainScreen> {
                               padding:
                                   const EdgeInsets.symmetric(horizontal: 5),
                               child: Center(
-                                child: Text(quran.getBasmala(),
+                                child: Text("quran.getBasmala()",
                                     textAlign: TextAlign.right,
                                     maxLines: 5,
                                     style: const TextStyle(
@@ -825,7 +825,7 @@ class _MainScreenState extends State<MainScreen> {
                             width: MediaQuery.of(context).size.width,
                             height: 50,
                             child: Text(
-                              quran.getBasmala(),
+                              "quran.getBasmala()",
                               textAlign: TextAlign.center,
                               style: const TextStyle(
                                   fontFamily: 'Scheherazade',
@@ -859,7 +859,7 @@ class _MainScreenState extends State<MainScreen> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  Text(quran.getBasmala(),
+                                  Text("quran.getBasmala()",
                                       textAlign: TextAlign.center,
                                       style: const TextStyle(
                                           fontSize: 25,

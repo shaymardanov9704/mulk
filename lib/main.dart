@@ -1,4 +1,4 @@
-//Rismillahir Rohmanir Rohim
+//Bismillahir Rohmanir Rohim
 
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
@@ -34,15 +34,9 @@ class MyApp extends StatelessWidget {
       supportedLocales: context.supportedLocales,
       locale: context.locale,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.green,
-      ),
+      theme: ThemeData(primarySwatch: Colors.green),
       home: const SplashScreen(),
-      routes: {
-        InfoPage.id: (context) => const InfoPage(
-              mode: false,
-            )
-      },
+      routes: {InfoPage.id: (context) => const InfoPage(mode: false)},
     );
   }
 }
