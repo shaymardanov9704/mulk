@@ -421,6 +421,12 @@ class _MainScreenState extends State<MainScreen> {
   }
 
   @override
+  void dispose() {
+    player.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: mode ? Colors.yellow.shade100 : Colors.white,
@@ -909,8 +915,11 @@ class _MainScreenState extends State<MainScreen> {
                                 LocaleKeys.tafsir2.tr()),
                             tafseerWidget(3, LocaleKeys.ayah3.tr(),
                                 LocaleKeys.tafser3.tr()),
-                            tafseerWidget(4, LocaleKeys.ayah4.tr(),
-                                LocaleKeys.tafser4.tr()),
+                            tafseerWidget(
+                              4,
+                              LocaleKeys.ayah4.tr(),
+                              LocaleKeys.tafser4.tr(),
+                            ),
                             tafseerWidget(5, LocaleKeys.ayah5.tr(),
                                 LocaleKeys.tafser5.tr()),
                             tafseerWidget(6, LocaleKeys.ayah6.tr(),

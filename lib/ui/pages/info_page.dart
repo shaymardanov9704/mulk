@@ -14,7 +14,7 @@ class InfoPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: mode ? Colors.yellow.shade100 : Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.lightGreen.shade800, //FF512DA8
+        backgroundColor: Colors.lightGreen.shade800,
         title: Text(
           LocaleKeys.info.tr(),
           style: GoogleFonts.rubik(color: Colors.white, fontSize: 20),
