@@ -3,25 +3,26 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:mulk/core/translations/codegen_loader.g.dart';
-import 'package:mulk/ui/pages/info_page.dart';
-import 'package:mulk/ui/pages/splash_screen_page.dart';
+import 'package:mulk/ui/pages/main/main_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
 
-  runApp(EasyLocalization(
-    path: 'assets/translations',
-    supportedLocales: const [
-      Locale('en'),
-      Locale('uz'),
-      Locale('ru'),
-      Locale('de')
-    ],
-    fallbackLocale: const Locale('en'),
-    assetLoader: const CodegenLoader(),
-    child: const MyApp(),
-  ));
+  runApp(
+    EasyLocalization(
+      path: 'assets/translations',
+      supportedLocales: const [
+        Locale('en'),
+        Locale('uz'),
+        Locale('ru'),
+        Locale('de')
+      ],
+      fallbackLocale: const Locale('en'),
+      assetLoader: const CodegenLoader(),
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -33,10 +34,9 @@ class MyApp extends StatelessWidget {
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
-      title: 'Flutter Demo',
+      title: 'Mulk',
       theme: ThemeData(primarySwatch: Colors.green),
-      home: const SplashScreen(),
-      routes: {InfoPage.id: (context) => const InfoPage(mode: false)},
+      home: const MainPage(),
     );
   }
 }
